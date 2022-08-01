@@ -1,4 +1,3 @@
 <?php
-$m = new MongoClient();
-echo "connected successfully.";
+echo("Hello world");
 ?>
