@@ -2,7 +2,7 @@
     $id = $_GET['id'];
     include 'connection.php';
     session_start();
-    $ss = "use user_database";
+    $ss = "use sql6520365";
     mysqli_query($conn, $ss);
     $query = "Delete from task_info where user_name = '".$_SESSION['user']."' and id = '".$id."'";
 

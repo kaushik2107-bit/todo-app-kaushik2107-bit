@@ -31,9 +31,9 @@ session_start();
       // $uuname = $username;
 
 
-      $query1 = "create database if not exists user_database";
+      $query1 = "create database if not exists sql6520365";
       mysqli_query($conn, $query1);
-      $query2 = "use user_database";
+      $query2 = "use sql6520365";
       mysqli_query($conn, $query2);
 
       $query3 = "create table if not exists user_info (
@@ -64,9 +64,9 @@ session_start();
       $password = $_POST['psswd'];
       $password = hash("sha256", $password);
 
-      $query1 = "create database if not exists user_database";
+      $query1 = "create database if not exists sql6520365";
       mysqli_query($conn, $query1);
-      $query2 = "use user_database";
+      $query2 = "use sql6520365";
       mysqli_query($conn, $query2);
 
       $query3 = "create table if not exists user_info (
@@ -112,9 +112,9 @@ session_start();
       $task_time = $_POST['task_time'];
 
 
-      $query1 = "create database if not exists user_database";
+      $query1 = "create database if not exists sql6520365";
       mysqli_query($conn, $query1);
-      $query2 = "use user_database";
+      $query2 = "use sql6520365";
       mysqli_query($conn, $query2);
       // echo $task_title;
       $q1 = "create table if not exists task_info (
@@ -216,7 +216,7 @@ session_start();
           }
 
           if (isset($_SESSION['user'])) {
-            $query2 = "use user_database";
+            $query2 = "use sql6520365";
             mysqli_query($conn, $query2);
             $qqq1 = "select * from task_info where user_name = '" .$_SESSION['user']."' ORDER BY task_date, task_time";
             $qq1 = mysqli_query($conn, $qqq1);
